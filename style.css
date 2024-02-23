@@ -1,0 +1,406 @@
+/*start global roles*/
+* {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+     }
+:root{
+    --main-coler:#2196f3;
+    --main-coler-alt:#1787e0;
+    --main-transition: 0.3s;
+}
+   
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Tahoma, Geneva, sans-serif;;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+/*end global roles*/
+/*start header*/
+.header{
+    background-color: black;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px black;
+    -moz-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
+
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.header .logo{
+    color: var(--main-coler);
+    font-size: 26px;
+  font-weight: bold;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.header .main-nav{
+    display: flex;
+}
+
+.header .main-nav > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    position: relative;
+    color:gray;
+    padding: 0 30px;
+   
+    transition: var(--main-transition);
+  }
+  .navbar a:hover {
+   background-color: rgba(221, 221, 221, 0.151);
+    color: black;
+  }
+  
+  .header .main-nav > li > a.active{
+   color:white;
+    background-color: #ffc451;}
+
+/*end header*/
+/*start intro*/
+/* img.card-img-top{
+ border-radius: 80%;
+ height: 55%;
+ width: 70%;
+
+} */
+/* img {
+  position: relative;
+  top: -50px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  box-shadow: -1px 1px 11px 6px rgba(189, 172, 172, 0.33);
+} */
+
+/*text style*/
+h3.title {
+  padding-bottom: 20px;
+}
+p.card-text {
+  padding-bottom: 10px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    -webkit-animation-name: pulse;  
+    animation-name: pulse;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  transition: 0.3s;
+  margin: auto;
+  text-align: center;
+  font-family: Comic Sans MS;
+border: none;
+padding: 15px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+/*card animation*/
+@-webkit-keyframes pulse {
+  0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+  }
+  50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+  }
+}
+  @keyframes pulse {
+  0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+  }
+  50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+  }
+} 
+/*photo style*/
+
+.card {
+  max-width: 300px;
+  box-shadow: -5px 2px 18px 4px #ccc;
+  text-align: center;
+  padding-bottom: 20px;
+  background-color:aliceblue ;
+}
+/* img.card-img-top{
+  border-radius: 50%;
+} */
+/*background section*/
+body{
+  background-color: rgb(34, 32, 32);
+}
+
+/*end intro*/
+/*start about me*/
+
+.aboutme{
+  background-color: rgb(61, 61, 61);
+}
+.h1 {
+  display: block;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: inherit;
+  font-weight:500;
+  line-height: 1.1;
+  color: inherit;
+}
+.aboutme h1 {
+  color: #ffc451;
+
+  margin: 70px 0;
+  text-align: center;
+  
+}
+.aboutme p{
+  
+  color: rgb(211, 211, 211);
+  font-size: 35px;
+  line-height: 48px;
+  margin-bottom: 100px;
+  font-family: Comic Sans MS;
+  text-align: center;
+  padding: 15px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+img{
+  width: 100%;
+  border-radius: 10%;
+}
+.aboutme{
+  display: grid;
+}
+.me:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    -webkit-animation-name: pulse;  
+    animation-name: pulse;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+/* .aboutme p:hover{
+  color: #4f9db9;
+} */
+.s{
+  text-align: center;
+  color: #3b8ece;
+  font-size: 50px;
+  line-height: 48px;
+}
+
+
+/*end about me*/
+/*start skills*/
+
+.my-skills .progress {
+  margin-bottom: 52px;
+}
+.progress {
+  height: 30px;
+}
+/* .progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+} */
+.my-skills .courses h2 {
+  text-align: right;
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+.my-skills h1 {
+  color: #ffc451;
+
+  margin: 70px 0;
+  text-align: center;
+  font-size: 50px;
+  
+}
+
+.my-skills{
+  display: grid;
+}
+.my-skills {
+  margin: 0;
+  padding-top: 50px;
+  height:100%;
+  background-color: #000000;
+  color: white;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+/*end skils*/
+/*start my rojects*/
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+
+
+
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+ 
+}
+
+
+.my_projects{
+  background-color: rgb(229, 236, 243);
+    display: grid;
+    
+    padding-top: 50px;
+    height:100%;
+  
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+  
+}
+.text2 {
+  color: #ffc451;
+  text-align: center;
+  font-size: 50px;
+  margin: 70px 0;
+
+}
+img{
+size: 100px;
+
+}
+
+
+/*end my rojects*/
+/*start contact*/
+/* * {
+  box-sizing: border-box;
+} */
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container1 {
+  border-radius: 5px;
+  background-color: #070707;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column1 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/*end contact*/
